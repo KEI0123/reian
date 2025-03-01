@@ -6,6 +6,12 @@ body {
   font-family: "MS Gothic", sans-serif;
 }
 
+.character-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* キャラクターアイコンを横並びに */
 .character-list {
   display: flex;
@@ -28,8 +34,6 @@ body {
 
 /* キャラクター詳細（アイコンの下に表示） */
 .character-detail {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   margin-top: 20px;
 }
