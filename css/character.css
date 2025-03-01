@@ -1,0 +1,44 @@
+@import url("common.css");
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: "MS Gothic", sans-serif;
+}
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.character {
+  text-align: center;
+  width: 200px;
+}
+
+.character img {
+  width: 100%;
+  border: 2px solid #fff;
+}
+
+.character .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.character-detail {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.character-detail img {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.profile {
+  max-width: 600px;
+}
