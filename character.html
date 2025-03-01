@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>キャラクター - 黎暗文明探訪</title>
     <link rel="stylesheet" href="css/character.css" />
+    <script defer src="js/characters.js"></script>
   </head>
   <body>
     <div class="container">
@@ -23,26 +24,24 @@
 
       <div class="content">
         <h2>登場キャラクター</h2>
+        <!-- キャラアイコンを横に並べる -->
         <div class="character-list">
-          <div class="character">
-            <img src="assets/images/characters/character1.png" alt="キャラ1" />
-            <p class="name">キャラ名1</p>
-            <p class="desc">短い説明文</p>
-          </div>
-          <div class="character">
-            <img src="assets/images/characters/character2.png" alt="キャラ2" />
-            <p class="name">キャラ名2</p>
-            <p class="desc">短い説明文</p>
-          </div>
-          <!-- 他のキャラクターも追加 -->
+          <img src="assets/images/characters/character01.png" alt="キャラ1" class="character-icon" data-index="0" />
+          <img src="assets/images/characters/character02.png" alt="キャラ2" class="character-icon" data-index="1" />
+          <img src="assets/images/characters/character03.png" alt="キャラ3" class="character-icon" data-index="2" />
+          <img src="assets/images/characters/character04.png" alt="キャラ4" class="character-icon" data-index="3" />
+          <img src="assets/images/characters/character05.png" alt="キャラ5" class="character-icon" data-index="4" />
+          <img src="assets/images/characters/character06.png" alt="キャラ6" class="character-icon" data-index="5" />
+          <img src="assets/images/characters/character07.png" alt="キャラ7" class="character-icon" data-index="6" />
         </div>
 
+        <!-- ここに詳細を表示 -->
         <h2>キャラクター詳細</h2>
         <div class="character-detail">
-          <img src="assets/images/characters/character1_large.png" alt="キャラ1" />
+          <img id="character-image" src="assets/images/characters/character01_large.png" alt="キャラ1" />
           <div class="profile">
-            <h3>キャラ名1</h3>
-            <p>ストーリーや能力の詳細をここに書く。</p>
+            <h3 id="character-name">キャラ名1</h3>
+            <p id="character-desc">ストーリーや能力の詳細をここに書く。</p>
           </div>
         </div>
       </div>
