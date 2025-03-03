@@ -75,6 +75,10 @@ footer {
   margin: 0 15px;
 }
 
+.top-menu ul li a:hover {
+  color: #459ea0;
+}
+
 .top-menu ul li a {
   color: #fff;
   text-decoration: none;
