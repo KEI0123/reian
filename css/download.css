@@ -50,3 +50,68 @@
 .download-btn:hover {
   background-color: #459ea0;
 }
+
+/* チェンジログ関連の新しいスタイル */
+.changelog {
+  background-color: #1a1a1a;
+  padding: 15px;
+  margin-top: 15px;
+  border-left: 3px solid #459ea0;
+  border-radius: 0 4px 4px 0;
+}
+
+.changelog h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #459ea0;
+}
+
+.changelog ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.changelog li {
+  display: list-item;
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+.download-buttons {
+  margin: 10px 0;
+}
+
+/* アーカイブリンク */
+.archive-link {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.archive-link a {
+  color: #459ea0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.archive-link a:hover {
+  color: #67b5b7;
+  text-decoration: underline;
+}
+
+/* スマホ向け調整 */
+@media (max-width: 768px) {
+  .download-info {
+    flex-direction: column;
+  }
+
+  .download-info ul:last-child {
+    margin-top: 5px;
+  }
+
+  .changelog {
+    padding: 10px;
+  }
+}
