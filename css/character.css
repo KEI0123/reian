@@ -6,10 +6,10 @@
   flex-direction: column;
 }
 
-/* キャラクターアイコンを横並びに */
 .character-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 20px;
 }
@@ -43,4 +43,23 @@
 .profile {
   text-align: center;
   max-width: 300px;
+}
+
+/* スマホ向け調整 */
+@media (max-width: 768px) {
+  .character-detail {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .character-detail img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .profile {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
 }

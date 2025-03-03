@@ -44,10 +44,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     characterIcons.forEach(icon => {
         icon.addEventListener("click", () => {
-            const index = icon.getAttribute("data-index");
-            characterImage.src = characters[index].image;
-            characterName.textContent = characters[index].name;
-            characterDesc.textContent = characters[index].desc;
+            const index = parseInt(icon.getAttribute("data-index"));
+            updateCharacterInfo(index);
         });
     });
+
+    function updateCharacterInfo(index) {
+        characterImage.src = characters[index].image;
+        characterName.textContent = characters[index].name;
+        characterDesc.textContent = characters[index].desc;
+    }
 });

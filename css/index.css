@@ -1,1 +1,25 @@
 @import url("common.css");
+
+.system-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.system-table th,
+.system-table td {
+  border: 1px solid #444;
+  padding: 8px 15px;
+  text-align: left;
+}
+
+.system-table th {
+  background-color: #333;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .system-table {
+    width: 100%;
+  }
+}
