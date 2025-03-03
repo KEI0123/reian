@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="過去のお知らせ一覧をタグごとに見やすく表示します。" />
+    <meta property="og:title" content="お知らせ - 黎暗文明探訪" />
+    <meta property="og:description" content="過去のお知らせ一覧をタグごとに見やすく表示します。" />
+    <title>お知らせ一覧 - 黎暗文明探訪</title>
+    <link rel="stylesheet" href="css/news.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="canonical" href="https://reian-game.github.io/reian/news.html" />
+    <script defer src="js/news.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>黎暗文明探訪</h1>
+        <nav class="top-menu">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">ゲーム紹介</a></li>
+            <li><a href="character.html">キャラクター</a></li>
+            <li><a href="screenshots.html">スクリーンショット</a></li>
+            <li><a href="download.html">ダウンロード</a></li>
+            <li><a href="contact.html">コンタクト</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content">
+        <main>
+          <div class="news-archive-section">
+            <h2>お知らせ一覧</h2>
+
+            <!-- 年月別アーカイブナビゲーション -->
+            <div class="archive-navigation">
+              <div class="year-select">
+                <select id="yearSelect" onchange="filterNewsByYear()">
+                  <option value="all">すべての年</option>
+                  <option value="2025" selected>2025年</option>
+                  <option value="2024">2024年</option>
+                  <option value="2023">2023年</option>
+                </select>
+              </div>
+              <div class="category-filter">
+                <button class="filter-btn active" data-category="all">全て</button>
+                <button class="filter-btn" data-category="update">アップデート</button>
+                <button class="filter-btn" data-category="event">イベント</button>
+                <button class="filter-btn" data-category="media">メディア</button>
+                <button class="filter-btn" data-category="other">その他</button>
+              </div>
+            </div>
+
+            <!-- 2025年のお知らせ -->
+            <div class="news-year" id="news-2025">
+              <h3>2025年</h3>
+              <div class="news-list">
+                <!-- 2025/02/28 -->
+                <div class="news-item" data-category="update" data-page="1">
+                  <div class="news-header">
+                    <div class="news-date">2025/02/28</div>
+                    <div class="news-category update">アップデート</div>
+                  </div>
+                  <div class="news-title">Ver 1.2.0 リリースのお知らせ</div>
+                  <div class="news-content">
+                    <p>新キャラクター「蒼月 詩織」を追加しました。また、ステージ4のボスパターンを調整し、 一部の不具合を修正しました。</p>
+                    <h4>▼アップデート内容</h4>
+                    <ul>
+                      <li>新キャラクター「蒼月 詩織」を追加</li>
+                      <li>ステージ4ボス「玄鈴 蓮」の弾幕パターンを調整</li>
+                      <li>特定条件下でのクラッシュバグを修正</li>
+                      <li>BGM「深淵の記憶」を追加</li>
+                      <li>各種UIの改善</li>
+                    </ul>
+                    <p><a href="download.html">ダウンロードページ</a>から最新版を入手できます。</p>
+                  </div>
+                </div>
+
+                <!-- 2025/02/15 -->
+                <div class="news-item" data-category="other" data-page="1">
+                  <div class="news-header">
+                    <div class="news-date">2025/02/15</div>
+                    <div class="news-category other">その他</div>
+                  </div>
+                  <div class="news-title">公式サイトをリニューアルしました</div>
+                  <div class="news-content">
+                    <p>
+                      この度、「黎暗文明探訪」の公式サイトをリニューアルいたしました。 デザインを一新し、スマートフォンやタブレットからも見やすいレスポンシブデザインを採用しています。
+                      また、キャラクター紹介ページの充実や、スクリーンショットギャラリーの追加など、 コンテンツも大幅に拡充しました。
+                    </p>
+                    <p>今後も随時更新してまいりますので、ぜひブックマークしてご利用ください。</p>
+                  </div>
+                </div>
+
+                <!-- 2025/01/20 -->
+                <div class="news-item" data-category="media" data-page="1">
+                  <div class="news-header">
+                    <div class="news-date">2025/01/20</div>
+                    <div class="news-category media">メディア</div>
+                  </div>
+                  <div class="news-title">インディーゲームマガジン「Digital Creator」2月号に掲載されました</div>
+                  <div class="news-content">
+                    <p>
+                      インディーゲーム専門誌「Digital Creator」2月号の特集「注目の同人STGゲーム」にて、 「黎暗文明探訪」が紹介されました。開発秘話や今後の展開についてのインタビューも掲載されています。
+                    </p>
+                    <p>雑誌は全国の書店およびオンラインストアで販売中です。</p>
+                  </div>
+                </div>
+
+                <!-- 2025/01/15 -->
+                <div class="news-item" data-category="other" data-page="1">
+                  <div class="news-header">
+                    <div class="news-date">2025/01/15</div>
+                    <div class="news-category other">その他</div>
+                  </div>
+                  <div class="news-title">公式Discord開設のお知らせ</div>
+                  <div class="news-content">
+                    <p>プレイヤーの皆様との交流の場として、公式Discordサーバーを開設しました。 攻略情報の共有や、開発者との質疑応答などにご活用ください。</p>
+                    <p>
+                      <a href="https://discord.gg/reian" target="_blank">Discordサーバーに参加する</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2024年のお知らせ -->
+            <div class="news-year" id="news-2024">
+              <h3>2024年</h3>
+              <div class="news-list">
+                <!-- 2024/12/20 -->
+                <div class="news-item" data-category="event" data-page="1">
+                  <div class="news-header">
+                    <div class="news-date">2024/12/20</div>
+                    <div class="news-category event">イベント</div>
+                  </div>
+                  <div class="news-title">冬季イベント「雪夜の祝祭」開催</div>
+                  <div class="news-content">
+                    <p>期間限定イベント「雪夜の祝祭」を開催します。特別なスペルカードと限定BGMをお楽しみください。</p>
+                    <h4>▼イベント概要</h4>
+                    <ul>
+                      <li>期間：2024/12/20～2025/01/10</li>
+                      <li>特別ステージ「雪降る遺跡」が出現</li>
+                      <li>限定スペルカード「氷華結晶」が入手可能</li>
+                      <li>クリア報酬として限定BGM「雪夜幻想曲」をアンロック</li>
+                    </ul>
+                    <p>イベント期間中にゲームを起動すると、自動的にイベントコンテンツが有効になります。</p>
+                  </div>
+                </div>
+
+                <!-- 2024/11/05 -->
+                <div class="news-item" data-category="update" data-page="1">
+                  <div class="news-header">
+                    <div class="news-date">2024/11/05</div>
+                    <div class="news-category update">アップデート</div>
+                  </div>
+                  <div class="news-title">Ver 1.1.5 リリースのお知らせ</div>
+                  <div class="news-content">
+                    <p>安定性の向上と不具合修正を含むアップデートをリリースしました。</p>
+                    <h4>▼アップデート内容</h4>
+                    <ul>
+                      <li>一部環境での描画バグを修正</li>
+                      <li>ステージ3でのフリーズ問題を解決</li>
+                      <li>キーボード設定のカスタマイズ機能を追加</li>
+                      <li>ライフシステムのバランス調整</li>
+                    </ul>
+                    <p><a href="download.html">ダウンロードページ</a>から最新版を入手できます。</p>
+                  </div>
+                </div>
+
+                <!-- 2024/10/15 -->
+                <div class="news-item" data-category="event" data-page="2">
+                  <div class="news-header">
+                    <div class="news-date">2024/10/15</div>
+                    <div class="news-category event">イベント</div>
+                  </div>
+                  <div class="news-title">「東方夢想祭」出展のお知らせ</div>
+                  <div class="news-content">
+                    <p>
+                      11月3日に開催される同人イベント「東方夢想祭」に出展します。 会場では体験版プレイや、開発中のVer 1.2の先行プレイが可能です。
+                      オリジナルグッズの販売も予定していますので、ぜひお立ち寄りください。
+                    </p>
+                    <h4>▼出展情報</h4>
+                    <ul>
+                      <li>日時：2024年11月3日 10:00～16:00</li>
+                      <li>場所：東京ビッグサイト 東ホール</li>
+                      <li>ブース番号：E-25</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 2024/09/30 -->
+                <div class="news-item" data-category="update" data-page="2">
+                  <div class="news-header">
+                    <div class="news-date">2024/09/30</div>
+                    <div class="news-category update">アップデート</div>
+                  </div>
+                  <div class="news-title">Ver 1.1.0 リリースのお知らせ</div>
+                  <div class="news-content">
+                    <p>初の大型アップデートとなるVer 1.1.0をリリースしました。 新ステージの追加や、プラクティスモードの実装など、大幅な機能拡張を行っています。</p>
+                    <h4>▼アップデート内容</h4>
+                    <ul>
+                      <li>新ステージ「深海遺跡」を追加</li>
+                      <li>新ボスキャラクター「玄鈴 蓮」を実装</li>
+                      <li>プラクティスモードを追加（ボス戦やステージの個別練習が可能に）</li>
+                      <li>難易度「ルナティック」を追加</li>
+                      <li>UIの改善とパフォーマンスの最適化</li>
+                    </ul>
+                    <p><a href="download.html">ダウンロードページ</a>から最新版を入手できます。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2023年のお知らせ -->
+            <div class="news-year" id="news-2023">
+              <h3>2023年</h3>
+              <div class="news-list">
+                <!-- 2023/12/25 -->
+                <div class="news-item" data-category="update" data-page="2">
+                  <div class="news-header">
+                    <div class="news-date">2023/12/25</div>
+                    <div class="news-category update">アップデート</div>
+                  </div>
+                  <div class="news-title">正式版 Ver 1.0.0 リリースのお知らせ</div>
+                  <div class="news-content">
+                    <p>
+                      長らくベータテスト版として公開していた「黎暗文明探訪」が、ついに正式版としてリリースされました！
+                      多くのテスターの皆様からのフィードバックを元に、ゲームバランスの調整や操作性の向上など、 様々な改善を行っています。
+                    </p>
+                    <h4>▼正式版の特徴</h4>
+                    <ul>
+                      <li>全5ステージ、6キャラクターを実装</li>
+                      <li>3つの難易度（イージー、ノーマル、ハード）</li>
+                      <li>30種類以上のスペルカード</li>
+                      <li>リプレイ機能の実装</li>
+                      <li>BGM全12曲を収録</li>
+                    </ul>
+                    <p>
+                      正式版のリリースを記念して、オリジナルサウンドトラックも公開しました。
+                      <a href="download.html">ダウンロードページ</a>からゲーム本体と合わせてお楽しみください。
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 2023/10/10 -->
+                <div class="news-item" data-category="update" data-page="2">
+                  <div class="news-header">
+                    <div class="news-date">2023/10/10</div>
+                    <div class="news-category update">アップデート</div>
+                  </div>
+                  <div class="news-title">ベータ版 Ver 0.9.5 リリースのお知らせ</div>
+                  <div class="news-content">
+                    <p>正式リリースに向けた最後のベータ版となるVer 0.9.5をリリースしました。 ゲームの安定性向上を中心に、多数の不具合修正を行っています。</p>
+                    <h4>▼アップデート内容</h4>
+                    <ul>
+                      <li>全体的なパフォーマンスの最適化</li>
+                      <li>セーブデータの保存形式を改善</li>
+                      <li>エンディングシーンを実装</li>
+                      <li>サウンドエフェクトの追加と改善</li>
+                    </ul>
+                    <p>正式版は2023年12月頃リリース予定です。引き続きフィードバックをお寄せください。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ページネーション -->
+            <div class="pagination">
+              <a href="#" class="page-prev" onclick="changePage(currentPage - 1)"> &laquo; 前へ</a>
+              <span class="page-number active" data-page="1">1</span>
+              <a href="#" class="page-number" data-page="2">2</a>
+              <a href="#" class="page-number" data-page="3">3</a>
+              <a href="#" class="page-next" onclick="changePage(currentPage + 1)">次へ &raquo;</a>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <footer>
+        <div class="social-links">
+          <a href="https://twitter.com/reian_game" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://discord.gg/reian" target="_blank"><i class="fab fa-discord"></i></a>
+          <a href="https://youtube.com/c/reian_game" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://github.com/KEI0123/reian" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="footer-copyright">&copy; 2025 黎暗文明探訪 All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
