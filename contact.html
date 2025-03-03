@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="黎暗文明探訪のお問い合わせとコンタクト情報" />
+    <title>お問い合わせ - 黎暗文明探訪</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script defer src="js/contact.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>お問い合わせ</h1>
+        <nav class="top-menu">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">ゲーム紹介</a></li>
+            <li><a href="character.html">キャラクター</a></li>
+            <li><a href="screenshots.html">スクリーンショット</a></li>
+            <li><a href="download.html">ダウンロード</a></li>
+            <li><a href="contact.html">コンタクト</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content">
+        <main>
+          <div class="contact-form">
+            <h2>フィードバック</h2>
+            <hr />
+            <div class="contact-description">
+              <p>「黎暗文明探訪」に関するご意見、ご感想、バグ報告などをお寄せください。開発チームに直接届きます。</p>
+            </div>
+
+            <hr />
+
+            <div class="form-section">
+              <form id="feedbackForm" onsubmit="return submitForm(event)">
+                <div class="form-group">
+                  <label for="name">お名前</label>
+                  <input type="text" id="name" name="name" class="form-control" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">メールアドレス</label>
+                  <input type="email" id="email" name="email" class="form-control" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">件名</label>
+                  <input type="text" id="subject" name="subject" class="form-control" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">メッセージ</label>
+                  <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">送信する</button>
+              </form>
+            </div>
+            <hr />
+          </div>
+        </main>
+      </div>
+
+      <footer>
+        <div class="social-links">
+          <a href="https://twitter.com/reian_game" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://discord.gg/reian" target="_blank"><i class="fab fa-discord"></i></a>
+          <a href="https://youtube.com/c/reian_game" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://github.com/KEI0123/reian" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="footer-copyright">&copy; 2025 黎暗文明探訪 All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,5 +1,11 @@
 @import url("common.css");
 
+.game-info {
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 .system-table {
   width: 100%;
   border-collapse: collapse;

@@ -1,1 +1,7 @@
 @import url("common.css");
+
+.screenshot-section {
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}

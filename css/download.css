@@ -1,5 +1,11 @@
 @import url("common.css");
 
+.download-section {
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 .version-item {
   margin-bottom: 20px;
 }
