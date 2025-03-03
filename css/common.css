@@ -81,6 +81,42 @@ footer {
   font-weight: bold;
 }
 
+/* SNSリンク用スタイル */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.social-links a {
+  display: inline-block;
+  color: #fff;
+  background-color: #3c3c3c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #459ea0;
+  transform: translateY(-3px);
+}
+
+.social-links i {
+  font-size: 20px;
+}
+
+/* フッターのコピーライト部分 */
+.footer-copyright {
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 12px;
+}
+
 /* スマホ向けメニュー */
 @media (max-width: 768px) {
   .top-menu ul {
