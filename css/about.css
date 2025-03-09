@@ -12,6 +12,7 @@
 
 .game-features li {
   margin-bottom: 10px;
+  list-style: square;
 }
 
 .story-section {
